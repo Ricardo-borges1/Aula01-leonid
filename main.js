@@ -17,34 +17,21 @@ titulo.textContent = 'SENAI'
     titulo.classList.add('verde')
 }
 
+const cidade = document.getElementById ('titulo')
+const cidadeDigitado = prompt ('Digite sua cidade')
+
+if (cidadeDigitado == ''){    
+cidade.textContent = 'SENAI'
+} else {
+    cidade.textContent = cidadeDigitado
+    cidade.classList.add('verde')
+
+}
+
+
 
 
 }
 
-const botaoTrocarTitulo = document.getElementById ('trocar-titulo')
+const botaoTrocarTitulo = document.getElementById ('cadastrar')
 botaoTrocarTitulo.addEventListener('click', trocarTitulo)
-
-
-
-
-
-function trocarNome () {
-
-    const nome = document.getElementById ('nome')
-    const nomeDigitado = prompt ('Digite seu nome')
-
-    if (nomeDigitado == ''){
-        nome.textContent = 'coloque seu nome'
-    } else {
-        nome.textContent = nomeDigitado
-        nome.classList.add('')
-    }
-
-
-
-}
-
-const BotaoDigiteNome = document.getElementById ('cadastrar')
-BotaoDigiteNome.addEventListener('click', trocarNome)
-
-
